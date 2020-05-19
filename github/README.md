@@ -135,5 +135,5 @@
 
 ![이미지연습](http://kyrieko.dothome.co.kr/images/first.jpg)
 
-폴더 내 images 폴더에 이미지가 있다면 ./imaages/이미지명.jpg 로 올리면 됩니다.
+폴더 내 images 폴더에 이미지가 있다면 ./images/이미지명.jpg 로 올리면 됩니다.
 
