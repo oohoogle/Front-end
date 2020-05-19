@@ -139,5 +139,5 @@
 
 아니라면 아래의 방법을 이용 해야합니다.
 
-# 11. 깃허브에 이미지 올리고 README에 삽입하기
+![이미지연습](http://kyrieko.dothome.co.kr/images/first.jpg)
 
