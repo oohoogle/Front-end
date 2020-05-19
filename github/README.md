@@ -172,3 +172,7 @@
 8) 최종적으로 원격 저장소로 업로드를 하기 위해서는 push 명령어를 사용합니다.
 
   - $ git push origin master
+
+9) 원격 master 에서 지역 master 로 받아야할 때
+  - $ git pull origin master
+
