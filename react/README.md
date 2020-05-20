@@ -18,7 +18,7 @@
 
 # 3. git 설치
 
-[깃설치](https://git-scm.com/)
+[git 설치](https://git-scm.com/)
 
 # 4. create-react-app 으로 프로젝트 실행하기
 
