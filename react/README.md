@@ -16,3 +16,16 @@
 
 3)Prettier - Code formatter
 
+# 3. git 설치
+
+[깃설치](https://git-scm.com/)
+
+# 4. create-react-app 으로 프로젝트 실행하기
+
+1)cmd 열기
+
+2)$ yarn create react-app hello-react
+
+3)$ cd hello-react
+
+4)$ yarn start
