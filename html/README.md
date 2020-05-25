@@ -12,10 +12,26 @@
 
 ### 2. 전역 구조화 엘리먼트
 
-A. <html>
+A. html
 
 다음과 같이 lang 애트리뷰트를 선언한다.
 
 `<html lang="ko">`
 
-B. <head>
+B. head
+
+meta, title, link, script, style 숚서로 엘리먼트를 선언핚다.
+
+```html
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>타이틀</title>
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<script type="text/javascript" src="js/default.js"></script>
+<style type="text/css">
+ [stuff]
+</style>
+</head>
+```
