@@ -130,11 +130,11 @@ D. input
 label 엘리먼트, title 애트리뷰트, alt 애트리뷰트를 통해 스크린 리더 사용자는 주변 맥락에 대핚 이해 없이 각 엘리먼트에 독립적으로 접근해도 폼을 이해할 수 있다.
 다음과 같이 type값에 따라 애트리뷰트를 선언한다.
 
-type이 text인 경우: type, id, title, value, accesskey 순서로 애트리뷰트를 선언한다.
++ type이 text인 경우: type, id, title, value, accesskey 순서로 애트리뷰트를 선언한다.
 
 `<input type="text" id="user_id" title="사용자ID" value="아이디를 입력하세요" accesskey="l">`
 
-type이 radio, checkbox인 경우: type, name, id, checked 순서로 애트리뷰트를 선언한다.
++ type이 radio, checkbox인 경우: type, name, id, checked 순서로 애트리뷰트를 선언한다.
 
 ```html
 <input type="radio" name="vt_align" id="align_lft" checked="checked"><label for="align_lft">왼쪽정렬</label>
@@ -145,7 +145,7 @@ type이 radio, checkbox인 경우: type, name, id, checked 순서로 애트리�
 <input type="checkbox" name="sports" id="tennis"><label for="tennis">테니스</label>
 ```
 
-type이 image읶 경우: type, src, alt 순서로 애트리뷰트를 선언한다. 폼 전송 역할을 하는 디자인 버튼은 image 타입을 사용한다.
++ type이 image인 경우: type, src, alt 순서로 애트리뷰트를 선언한다. 폼 전송 역할을 하는 디자인 버튼은 image 타입을 사용한다.
 (디자인이 적용되지 않은 버튼은 `<button type="submit">`로 사용).
 
 `<input type="image" src="img/btn_confirm.gif" alt="확인">`
