@@ -332,7 +332,7 @@ href, target, title 순서로 애트리뷰트를 선언한다.
 
 `<a href="index.html" target="_blank" title="새창">인쇄하기</a>`
 
-C. img
+B. img
 
 src, width, height, title, alt, usemap 순서로 애트리뷰트를 선언한다
 
@@ -340,9 +340,9 @@ src, width, height, title, alt, usemap 순서로 애트리뷰트를 선언한다
 + title 애트리뷰트를 선언한 경우에도 alt 애트리뷰트를 함께 선언한다.
 + title 애트리뷰트는 alt 애트리뷰트값을 축약하거나 브라우저에 독립적으로 툴팁을 표현하기 위해 사용한다.
 
-`<img src="logo.gif" wdith="30" height="10" title="고객센터" alt="고객센터, 모듞 궁금증이 해결되는곳" usemap="#help">`
+`<img src="logo.gif" wdith="30" height="10" title="고객센터" alt="고객센터, 모든 궁금증이 해결되는곳" usemap="#help">`
 
-D. map
+C. map
 
 map 엘리먼트의 name 애트리뷰트를 선언하여 img 엘리먼트의 usemap 애트리뷰트와 같은 이름으로 연결(coupling)한다.
 
@@ -353,7 +353,7 @@ map 엘리먼트의 name 애트리뷰트를 선언하여 img 엘리먼트의 use
 </map>
 ```
 
-E. area
+D. area
 
 shape, coords, href, target, title, alt 순서로 애트리뷰트를 선언한다.
 
