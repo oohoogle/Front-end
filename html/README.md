@@ -162,8 +162,11 @@ E. select
 
 F. label
 라디오 버튼, 체크 박스는 for 애트리뷰트를 부여하여 해당 엘리먼트의 id값과 동일한 이름으로 연결(coupling)한다.
+
+```html
 <input type="radio" name="alignment" id="align_lft"><label for="align_lft">왼쪽정렬</label>
 <input type="checkbox" name="sports" id="soccer"> <label for="soccer">축구</label>
+```
 
 G. textarea
 
