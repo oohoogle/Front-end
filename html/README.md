@@ -38,7 +38,7 @@ meta, title, link, script, style 순서로 엘리먼트를 선언한다.
 
 C. meta
 
-문서의 기본 인코딩, Viewport, 스크립트 형식, 스타일 형식 순서로 엘리먼트를 선언핚다.
+문서의 기본 인코딩, Viewport, 스크립트 형식, 스타일 형식 순서로 엘리먼트를 선언한다.
 Viewport는 모바일 브라우저에 대응하는 HTML의 경우에만 선언한다.
 
 ```html
@@ -83,7 +83,7 @@ F. style
 
 A. form
 
-action 애트리뷰트는 서버 사이드 폼 핸들러이나 필수 선언 애트리뷰트이기 때문에, 마크업 단계에서 다음과 같이 선언핚다.
+action 애트리뷰트는 서버 사이드 폼 핸들러이나 필수 선언 애트리뷰트이기 때문에, 마크업 단계에서 다음과 같이 선언한다.
 
 ```html
 <form action="">
@@ -127,7 +127,7 @@ D. input
 <input type="text" id="num1" name="num1" title="지역번호">
 ```
 
-label 엘리먼트, title 애트리뷰트, alt 애트리뷰트를 통해 스크린 리더 사용자는 주변 맥락에 대핚 이해 없이 각 엘리먼트에 독립적으로 접근해도 폼을 이해할 수 있다.
+label 엘리먼트, title 애트리뷰트, alt 애트리뷰트를 통해 스크린 리더 사용자는 주변 맥락에 대한 이해 없이 각 엘리먼트에 독립적으로 접근해도 폼을 이해할 수 있다.
 다음과 같이 type값에 따라 애트리뷰트를 선언한다.
 
 + type이 text인 경우: type, id, title, value, accesskey 순서로 애트리뷰트를 선언한다.
@@ -167,7 +167,7 @@ F. label
 
 G. textarea
 
-cols, rows 숚서로 애트리뷰트를 선언한다. 
+cols, rows 순서로 애트리뷰트를 선언한다. 
 CSS를 정상적으로 불러오지 못하는 상황에서도 사용에 문제가 없도록 col, rows의 애트리뷰트값은 각각 최소 30, 5 이상이 되도록 선언한다.
 
 `<textarea cols="30" rows="5"></textarea>`
@@ -186,7 +186,7 @@ type 애트리뷰트를 선언한다.
 
 ### 4. 표 엘리먼트
 
-표 엘리먼트를 아래와 같이 배치핚다.
+표 엘리먼트를 아래와 같이 배치한다.
 
 ```html
 <table cellspacing="0" border="1" summary="짬뽕은 자장면보다 500원 비싸고 열량이 50kcal 높다">
@@ -230,15 +230,15 @@ A. table
 
 B. caption
 
-표의 제목을 표현하기 위해 사용핚다.
+표의 제목을 표현하기 위해 사용한다.
 
 `<caption>자장면과 짬뽕의 가격과 열량 비교</caption>`
 
-표 윗부분의 헤딩 엘리먼트가 표의 제목 역핛을 하는 경우에는 생략할 수 있다.
+표 윗부분의 헤딩 엘리먼트가 표의 제목 역할을 하는 경우에는 생략할 수 있다.
 
 C. colgroup
 
-col 엘리먼트를 그루핑하여 디자인을 제어할 때 선언핚다. 이 엘리먼트는 선택적으로 사용한다.
+col 엘리먼트를 그루핑하여 디자인을 제어할 때 선언한다. 이 엘리먼트는 선택적으로 사용한다.
 
 ```html
 <colgroup>
@@ -261,7 +261,7 @@ width, span 애트리뷰트를 아래와 같은 순서로 선언한다.
 <col width="50%"><col width="50%">
 ```
 
-width, span 애트리뷰트는 필요에 따라 선택적으로 사용핚다.
+width, span 애트리뷰트는 필요에 따라 선택적으로 사용한다.
 
 
 E. thead
@@ -279,7 +279,7 @@ E. thead
 ```
 
 
-F. <tfoot>
+F. tfoot
 
 표 바닥글을 그루핑할 때 선언한다. tfoot 애트리뷰트는 thead와 tbody 엘리먼트 사이에 위치해야 한다. 
 이 애트리뷰트는 선택적으로 사용한다.
@@ -299,3 +299,67 @@ F. <tfoot>
 …
 </tbody>
 ```
+
+G. th
+
+scope 애트리뷰트를 선언한다.
+
+`<th scope="col" abbr="가격">음식의 가격(won)</th>`
+
+H. tbody
+
+표 본문을 그루핑하기 위해 선언한다. 테이블의 본문(body)이 하나이고 thead나 tfoot이 없을 경우 생략할 수 있다.
+
+```html
+<tbody>
+<tr>
+<th scope="row">자장면</th>
+<td>3,000</td>
+<td>300</td>
+</tr>
+</tbody>
+```
+
+### 5. 기타 엘리먼트
+
+A. a
+
+href, target, title 순서로 애트리뷰트를 선언한다.
+
++ 새 창으로 페이지를 표시해야 할 때 target 애트리뷰트를 선택적으로 사용한다.
++ class로 디자인을 제어할 경우 class 애트리뷰트를 선택적으로 사용한다.
++ title 애트리뷰트는 예고 없이 새 창을 표시해야 하거나 이동 경로를 정확히 알 수 없을 때, 또는 브라우저에 독립적으로 툴팁을 표현하기 위해 사용한다.
+
+`<a href="index.html" target="_blank" title="새창">인쇄하기</a>`
+
+C. img
+
+src, width, height, title, alt, usemap 순서로 애트리뷰트를 선언한다
+
++ 이미지 내용과 동읷한 값을 alt 애트리뷰트에 표기하여, 이미지를 볼 수 없는 환경(스크린 리더, 이미지서버 장애, 이미지 표시 하지 않음 설정)에서도 내용을 확인할 수 있게 한다.
++ title 애트리뷰트를 선언한 경우에도 alt 애트리뷰트를 함께 선언한다.
++ title 애트리뷰트는 alt 애트리뷰트값을 축약하거나 브라우저에 독립적으로 툴팁을 표현하기 위해 사용한다.
+
+`<img src="logo.gif" wdith="30" height="10" title="고객센터" alt="고객센터, 모듞 궁금증이 해결되는곳" usemap="#help">`
+
+D. map
+
+map 엘리먼트의 name 애트리뷰트를 선언하여 img 엘리먼트의 usemap 애트리뷰트와 같은 이름으로 연결(coupling)한다.
+
+```html
+<img src="img_main.gif" width="696" height="196" title="한글날이벤트" alt="한글날이벤트, 한글을 글꼴로 나눕니다" usemap="#help">
+<map name="help">
+<area shape="rect" coords="506,48,608,139" href="#" target="_blank" title="고객센터" alt="고객센터, 모든 궁금증이 해결되는 곳">
+</map>
+```
+
+E. area
+
+shape, coords, href, target, title, alt 순서로 애트리뷰트를 선언한다.
+
++ title 애트리뷰트를 선언한 경우에도 alt 애트리뷰트를 함께 선언한다.
++ target 애트리뷰트는 새 창으로 페이지를 표시해야 할 때 사용한다.
++ title 애트리뷰트는 예고 없이 새 창을 표시해야 하거나 이동 경로를 정확히 알 수 없을 때, alt 애트리뷰트값을 축약하거나, 브라우저에 독립적으로 툴팁을 표현하기 위해 사용한다.
+
+```<area shape="rect" coords="506,48,608,139" href="#" target="_blank" title="새창" alt="고객센터, 모든 궁금증이 해결되는 곳">```
+
