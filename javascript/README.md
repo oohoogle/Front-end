@@ -162,3 +162,75 @@ let areaOfCircle = pi*radius*radius;
 return areaOfCircle;
 }
 ```
+
+### 3. 배열(array)
+
+배열은 순서가 있는 값으로 순서는 인덱스(index), 값은 요소(element)라고 칭한다. 배열의 인덱스는 0부터 번호를 매기며 인덱스를 통해서 배열의 값에 접근한다.
+
+```javascript
+let myNumber = [23,455,43,2];
+myNumber[3]=43; //myNumber라는 배열의 2번째 인덱스를 조회 
+myNumber[2]=200; //myNumber라는 배열의 3번째 인덱스 값을 변경
+
+//배열 안에 배열을 넣을 수 있다.
+let myNumber = [[23,45],[23,44],[44,24]];
+//myNumber의 1번째 인덱스 값 
+[23,44]
+//myNumber의 1번째 인덱스의 0번째 값
+myNumber[1][0]; //23
+//배열의 길이를 알아낼 수 있다.
+myNumber.**length**;//4
+
+//배열의 제일 끝에 요소를 추가할 수 있다.
+myNumber.**push**(96);
+
+//배열의 마지막 요소를 삭제할 수 있다.
+myNumber.**pop**(21);
+```
+
+### 4. 반복문(loop)
+
+같거나 비슷한 코드를 여러번 실행시켜야 할 경우에 사용하는 구문
+
+반복문을 만드는 과정 : 반복하는 내용을 먼저 코드로 작성하고, 조건을 코드로 작성한다.
+
+```javascript
+let sum=1;
+sum = sum+2;
+sum = sum+3;
+sum = sum+4;
+```
+
++ sum과 숫자(n)의 합을 sum에 대입하자. ➡ sum=sum+n;
++ 조건: n은 2부터 시작한다 ➡ let n=2;
++ n은 4가 될 때까지 반복한다. ➡ n<=4;
++ n은 1씩 증가한다. ➡ n=n+1;
+
+#### for구문
+
+```javascript
+let sum = 1;
+for(let n=2; n<=4; n=n+1) //반복할 조건을 `초기화`,`조건식`,`증감문` 순으로 넣어준다. {
+sum = sum+n //반복할 내용을 중괄호 block안에 넣어준다. 
+ }
+console.log(sum);//10
+```
+
+#### 배열의 반복
+
+배열과 반복문을 조합하는 경우가 많다.
+
+```javascript
+let myNum = [23,65,63,12];
+for (let i=0; i<myNum.length; i++//증감연산자로 i=i+1과 같다) {
+console.log(myNum[i]);
+}
+
+//myNum의 모든 요소를 누적해서 더하기 위해서 필요한 조건과 구문
+let myNum = [10,20,40,10];
+let sum = 0;
+for(let n=0, n<myNumber.length, n++){
+sum=sum+myNumber[n];
+}
+```
+
