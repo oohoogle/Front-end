@@ -263,3 +263,44 @@ sum=sum+myNumber[n];
 card.suit // -> 하트
 card["rank"] // -> A
 ```
+
+#### 1-3. 프로퍼티 추가와 삭제
+
+없는 프로퍼티 이름에 값을 대입하면 새로운 프로퍼티가 추가됩니다.
+
+```javascript
+card.value = 14;
+console.log(card); // -> Object {suit:"하트", rank: "A", value: 14}
+```
+
+delete 연산자를 사용하면 프로퍼티를 삭제할 수 있습니다.
+
+```javascript
+delete card.rank;
+console.log(card); // -> Object {suit:"하트", value: 14}
+```
+
+#### 1-4. in 연산자로 프로퍼티가 있는지 확인하기.
+
+in 연산자를 사용하면 객체에 특정 프로퍼티가 있는지 확인할 수 있다. 
+
+프로퍼티가 객체에 포함되었을 떄는 true를 반환하고 포함되지 않았을 때는 false를 반환한다.
+
+```javascript
+var card = { suit: "하트", rank: "A" };
+console.log("suit" in card); // true
+console.log("color" in card); // false
+```
+
+#### 1-5. 객체 리터럴 예제
+
+좌표평면의 점을 표현하는 객체
+`var p = {x: 1.0, y: 2.5}`
+
+원을 표현하는 객체
+```javascript
+var circle = {
+    center: { x: 1.0, y: 2.0}
+    radius: 2.5
+}
+```
