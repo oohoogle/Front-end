@@ -166,3 +166,22 @@ a:hover,a:active,a:focus{text-decoration:underline}
 
 
 
+
+
+```css
+/*프린트 가로 스타일 지정*/
+@media print and (orientation:landscape){
+    @page{size:A4 auto; width:29.7cm; height:21cm;}
+    .print_wrap .km-cmly-contentpanel {margin-top:80px;}
+    .print_wrap .km-cmly-contentpanel:nth-child(2),.print_wrap .km-cmly-contentpanel:nth-child(3) {margin-top:30px;}
+}
+
+/*프린트 세로 스타일 지정*/
+@media print and (orientation:portrait){
+    @page{size:A4 auto; width:21cm; height:29.7cm;}
+    .print_wrap .km-cmly-contentpanel {margin-top:130px;}
+    .print_wrap .km-cmly-contentpanel:nth-child(2),.print_wrap .km-cmly-contentpanel:nth-child(3) {margin-top:80px;}
+    .print_wrap .km-cmly-contentpanel:nth-child(4n),.print_wrap .km-cmly-contentpanel:nth-child(4n+1){margin-top:0;}
+}
+
+```

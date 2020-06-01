@@ -402,16 +402,53 @@ if (조건식){
 #### 6-1. 함수를 정의 하는 법
 
 ```javascript
-// 함수 선언문으로 정의하는 방법
+// 1. 함수 선언문으로 정의하는 방법
 function square(x) { return x*x }
 
-// 함수 리터럴로 정의하는 방법
+// 2. 함수 리터럴로 정의하는 방법
 var square = function(x) { return x*x }
 
-// Function 생성자로 정의 하는방법
+// 3. Function 생성자로 정의 하는방법
 var square = new Function("x", "return x*x");
 
-// 화살표 함수 표현식으로 정의하는 방법
+// 4. 화살표 함수 표현식으로 정의하는 방법
 var square = x => x*x
+```
 
+#### 6-2. 함수의 호출 방법
+
+```javascript
+
+// 1. 함수 호출
+함수의 참조가 저장된 변수 뒤에 그룹 연산자를 붙여서 함수를 호출한다.
+var s = sqare(5);
+
+// 2. 메서드 호출
+객체의 프로퍼티에 저장된 값이 함수 타입일 때는 프로퍼티를 메서드라고 부르는데, 메서드를 호출 할 때는 그룹연산자를 붙여서 호출한다.
+obj.m = function(){...}
+obj.m();
+
+// 3. 생성자 호출
+var obj = new Object();
+```
+
+### 7. 이벤트 처리
+
+#### 7-1. 이벤트 처리기를 등록하는 방법
+
+```javascript
+// 1. HTML 요소의 이벤트처리기 속성에 설정하는 방법
+<input type="button" onClick="changeColor();">
+```
+
+```javascript
+// 2. DOM 요소 객체의 이벤트처리기 프로퍼티에 설정하는 방법
+var btn = document.getElementById("button");
+btn.onclick = changeColor();
+```
+
+```javascript
+// 3. addEventListener
+var btn = document.getElementById("button");
+btn.addEventListener("click", changeColor, false)
 ```
