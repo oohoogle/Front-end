@@ -452,3 +452,16 @@ btn.onclick = changeColor();
 var btn = document.getElementById("button");
 btn.addEventListener("click", changeColor, false)
 ```
+
+#### 7-2. addEventListener 메서드로 이벤트 리스너 등록하기
+
+```javascript 
+
+target.addEventListner(type, listener, useCapture) 
+
+// target : 이벤트 리스너를 등록할 DOM 노드
+// type : 이벤트 유형을 뜻하는 문자열 ("click", "mouseup" 등)
+// listener : 이벤트가 발생했을 때 처리를 담당하는 콜백 함수의 참조
+// useCapture : 이벤트 단계
+
+```
