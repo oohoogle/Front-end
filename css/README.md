@@ -24,34 +24,7 @@ url 데이터 타입에는 작은 따옴표를 사용하지 않는다.
 `content:'chapter'`
 `@charset "utf-8";`
 
-D. 마지막 세미콜론 사용 지양
-
-마지막 속성의 세미콜론(;)은 삭제한다
-
-`.class{font-size:12px;color:#000}`
-
-
-### 2. 공백
-
-A. 선택자 간 공백 제거
-
-쉼표로 구분되는 선택자 간 공백은 제거한다.
-
-`a:hover,a:active,a:focus{text-decoration:underline;}`
-
-B. 속성 간 공백 제거
-
-속성 간 공백은 제거한다.
-
-`.class p{color:#000;line-height:18px}`
-
-C. 중괄호 좌우 공백 제거
-
-중괄호 좌, 우의 공백은 제거한다.
-
-`.class p{color:#000;line-height:18px}`
-
-### 3. 인코딩
+### 2. 인코딩
 
 폰트 이름이 영문이 아닐 때 이를 브라우저에서 바르게 표현하고, HTML에서 불러온 스타일을 제대로 렌더링하려면 반드시 CSS 인코딩을 선언해야 한다. 
 HTML과 동일한 인코딩을 묷서 첫 줄에 공백 없이 선언한다.
@@ -59,9 +32,9 @@ HTML과 동일한 인코딩을 묷서 첫 줄에 공백 없이 선언한다.
 `@charset "utf-8";`
 
 
-### 4. 속성
+### 3. 속성
 
-#### 4-1. 속성 선언 순서
+#### 3-1. 속성 선언 순서
 
 속성을 선언할 때는 그 쓰임새가 레이아웃과 관련이 큰 것에서 시작하여 레이아웃과 무관한 것 순서로 선언한다. 
 
@@ -85,7 +58,7 @@ HTML과 동일한 인코딩을 묷서 첫 줄에 공백 없이 선언한다.
 
 10) 기타
 
-#### 4-2. 약식속성의 전체속성 선언 순서
+#### 3-2. 약식속성의 전체속성 선언 순서
 
 1) margin : margin-top, margin-right, margin-bottom, margin-left
 
@@ -99,7 +72,7 @@ border-style, border-top-style, border-right-style, border-bottom-style, borderl
 5) font : font-style, font-variant, font-weight, font-size, font-family, line-height
  
 
-#### 4-3. 약식 속성 사용 범위
+#### 3-3. 약식 속성 사용 범위
 
 background와 border는 약식 속성을 우선적으로 사용하며, font 약식 속성은 사용하지 않는다.
 
@@ -144,13 +117,13 @@ C. font
 
 `.class p{font-family:gulim;font-style:normal;font-variant:normal;font-weight:normal;font-size:15px;line-height:normal}`
 
-#### 4-4. 한글 폰트 선언
+#### 3-4. 한글 폰트 선언
 
 영문폰트를 선언할 경우 특정 브라우저에서 폰트를 올바르게 출력하지 못하는 경우가 있으므로 한글 폰트 선언 시 한글, 영문 폰트를 모두 선언한다.
 
 `font-family:'돋움',dotum`
 
-## 5. 초기 타입
+## 4. 초기 타입
 
 ```css
 @charset "utf-8";
@@ -163,6 +136,8 @@ em,address{font-style:normal}
 a{text-decoration:none}
 a:hover,a:active,a:focus{text-decoration:underline}
 ```
+
+## 5. 프린트 스타일 지정
 
 ```css
 /*프린트 가로 스타일 지정*/
