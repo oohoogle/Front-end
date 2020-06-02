@@ -164,10 +164,6 @@ a{text-decoration:none}
 a:hover,a:active,a:focus{text-decoration:underline}
 ```
 
-
-
-
-
 ```css
 /*프린트 가로 스타일 지정*/
 @media print and (orientation:landscape){
