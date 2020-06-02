@@ -432,9 +432,32 @@ obj.m();
 var obj = new Object();
 ```
 
-### 7. 이벤트 처리
+### 7. 웹브라우저의 객체
 
-#### 7-1. 이벤트 처리기를 등록하는 방법
+#### 7-1. 웹 브라우저에서 자바스크립트가 하는 일
+
++ 웹 페이지의 Document 객체 제어 (HTML 요소와 CSS 스타일 작업)
++ 웹 페이지의 Window 객체 제어 및 브라우저 제어
++ 웹 페이지에서 발생하는 이벤트 처리
++ HTTP를 이용한 통신 제어
+
+
+
+### 8. 문서 제어
+
+#### 8-1. DOM 트리
+
+문서를 제어하는 API인 DOM (Document Object Model)
+
+웹 페이지의 내용은 Document 객체가 관리한다. 웹 브라우저가 페이지를 읽어 들이면 렌더링 엔진은 웹 페이지의 HTML 문서 구문을 해석하고,
+
+Document 객체에서 문서 내용을 관리하는 DOM 트리라고 하는 객체의 트리 구조를 만든다.
+
+
+
+### 9. 이벤트 처리
+
+#### 9-1. 이벤트 처리기를 등록하는 방법
 
 ```javascript
 // 1. HTML 요소의 이벤트처리기 속성에 설정하는 방법
@@ -453,11 +476,11 @@ var btn = document.getElementById("button");
 btn.addEventListener("click", changeColor, false)
 ```
 
-#### 7-2. addEventListener 메서드로 이벤트 리스너 등록하기
+#### 9-2. addEventListener 메서드로 이벤트 리스너 등록하기
 
 ```javascript 
 
-target.addEventListner(type, listener, useCapture) 
+target.addEventListner(type, listener, useCapture)
 
 // target : 이벤트 리스너를 등록할 DOM 노드
 // type : 이벤트 유형을 뜻하는 문자열 ("click", "mouseup" 등)
