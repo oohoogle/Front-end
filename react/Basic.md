@@ -6,7 +6,7 @@
 
 ```javascript
 
-import React from 'react';
+import React from 'react'; // 리액트를 불러와서 사용할 수 있게 해준다.
 import './App.css';
 
 function App() {
