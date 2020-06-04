@@ -118,7 +118,7 @@ C. legend
 
 D. input
 
-다음과 같이 label 엘리먼트 또는 title 애트리뷰트를 선언g한다(type="image"이면 alt 애트리뷰트 사용). 
+다음과 같이 label 엘리먼트 또는 title 애트리뷰트를 선언한다(type="image"이면 alt 애트리뷰트 사용). 
 
 ```html
 <label for="user_id">아이디</label> <input type="text" id="user_id" name="user_id">
@@ -275,8 +275,8 @@ E. thead
 <thead>
 <tr>
 <th>구분</th>
-<th scope="col" abbr="가격">가격(won)</th>
-<th scope="col" abbr="열량">열량(kcal)</th>
+<th scope="col" abbr="가격">가격</th>
+<th scope="col" abbr="열량">열량</th>
 </tr>
 </thead>
 ```
@@ -307,7 +307,7 @@ G. th
 
 scope 애트리뷰트를 선언한다.
 
-`<th scope="col" abbr="가격">음식의 가격(won)</th>`
+`<th scope="col" abbr="가격">가격</th>`
 
 H. tbody
 
@@ -347,7 +347,7 @@ src, width, height, title, alt, usemap 순서로 애트리뷰트를 선언한다
 
 C. map
 
-map 엘리먼트의 name 애트리뷰트를 선언하여 img 엘리먼트의 usemap 애트리뷰트와 같은 이름으로 연결(coupling)한다.
+map 엘리먼트의 name 애트리뷰트를 선언하여 img 엘리먼트의 usemap 애트리뷰트와 같은 이름으로 연결한다.
 
 ```html
 <img src="img_main.gif" width="696" height="196" title="한글날이벤트" alt="한글날이벤트, 한글을 글꼴로 나눕니다" usemap="#help">
