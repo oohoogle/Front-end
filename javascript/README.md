@@ -1,8 +1,8 @@
 # Javascript
 
-### 1. 변수(Variable)
+### 1. 변수
 
-변수란 상황에 따라서 변할 수 있는 값을 말한다. 다시말해 어떤 값에 대해서 이름(label)을 붙여준 것이 변수라고 이해하면 더 쉽다.
+변수란 상황에 따라서 변할 수 있는 값이다.
 
 #### 변수의 선언
 
@@ -10,14 +10,14 @@
 
 `let myAge; // let을 이용해 myAge라는 변수를 선언`
 
-#### 변수의 할당(assign)
+#### 변수의 할당
 
 여기서 =는 프로그래밍에서는 같다(equal)의 의미가 아닌 대입(assign)을 의미한다.
 
-`myAge = '20'; //20이란 값을 myAge에 대입해줌, 이제 myAge는 20`
+`myAge = '32'; //32이란 값을 myAge에 대입해줌, 이제 myAge는 32`
 
 ```javascript
-let myAge = '20';
+let myAge = '32';
   선언    할당   
 ```
 
@@ -31,9 +31,6 @@ sum = sum + 3;
 sum = sum + 4;
 ```
 
-수학적으로는 말이 안되는 과정이지만 오른쪽의 값을 왼쪽에 할당한다는 의미이므로 프로그래밍 상에서는 가능하다. 
-sum이라는 변수를 할당해 줄 때 let을 한번만 사용한 것을 볼 수 있듯이 한번 선언한 변수는 다시 선언할 수 없다.
-
 #### 변수의 타입
 
 + Number
@@ -42,10 +39,9 @@ sum이라는 변수를 할당해 줄 때 let을 한번만 사용한 것을 볼 �
 + null
 + undefined
 
+### 2. 조건문
 
-### 2. 조건문(conditional expression)
-
-조건문은 어떠한 조건을 판별하는 기준을 만드는 것으로 조건으로는 반드시 비교연산자(comparison operator)가 필요하고 그 비교의 결과는 늘 boolean이어야 한다.
+조건문은 어떠한 조건을 판별하는 기준을 만드는 것으로 조건으로는 반드시 비교연산자가 필요하고 그 비교의 결과는 늘 boolean이어야 한다.
 
 #### 비교연산자
 
@@ -65,7 +61,7 @@ sum이라는 변수를 할당해 줄 때 let을 한번만 사용한 것을 볼 �
 '3' === 3 //false 
 ```
 
-#### 조건문은 어떻게 쓸까?
+#### 조건문 사용법
 
 조건에는 boolean으로 결과가 나오는 비교구문이 들어가야한다.
 
@@ -120,7 +116,7 @@ if문에서 false로 변환되므로 if구문이 실행되지 않는 경우
 + if(NaN)
 + if('') 빈스트링 즉, 값이 없는 문자열
 
-### 3. 함수(function)
+### 3. 함수
 
 함수는 컴퓨터에게 일을 시키기 위한 지시사항의 묶음으로 입력(input)-함수(function)-출력(return)의 과정으로 이루어진다. 함수 이름과 입력(input)이 반드시 들어가야한다.
 
@@ -129,16 +125,16 @@ if문에서 false로 변환되므로 if구문이 실행되지 않는 경우
 ```javascript
 ✔ 함수의 선언식
 function myFunction(input){
-//컴퓨터에게 시킬일
+  //컴퓨터에게 시킬일
 }
 
 ✔ 함수의 표현식 //변수를 이용해서 값을 계산하려고 할 때
 let myFunction = function(input){
-/컴퓨터에게 시킬일
+  /컴퓨터에게 시킬일
 }
 let timeToGoHome = function(speed,distance){
-let time = distance / speed;
-console.log(time); //결과를 출력하는 것 
+  let time = distance / speed;
+  console.log(time); //결과를 출력하는 것 
 }
 ```
 
