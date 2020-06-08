@@ -1,6 +1,6 @@
 # HTML element
 
-## Heading - h1 ~ h6
+## 1. Heading - h1 ~ h6
 
 제목의 단계(Headings)를 뜻하며 사용자가 가장 먼저 읽는 콘텐츠는 제목이며 h 요소로 구성된다.
 
@@ -13,7 +13,7 @@
 <h2>UX부문</h2>
 ```
 
-## Paragraphs – p
+## 2. Paragraphs – p
 
 문장의 단락을 표현하기 위해 사용하며 새로운 문장을 사용해야 하는 경우 p 태그를 새로 선언하도록 한다.
 
@@ -24,7 +24,7 @@ p 요소는 하나의 문단을 나타낸다. HTML에서 문단은 이미지나 
 <p>Some species live in houses where they hunt insects attracted by artificial light.</p>
 ```
 
-## Lists – ul(Unordered list), ol(Ordered list),dl(Description list)
+## 3. Lists – ul(Unordered list), ol(Ordered list),dl(Description list)
 
 목록은 리스트를 말하며 리스트는 크게 비순차형 목록, 순차형 목록, 정의(설명)형 목록으로 나눌 수 있다.
 
@@ -53,7 +53,7 @@ p 요소는 하나의 문단을 나타낸다. HTML에서 문단은 이미지나 
 </ol>
 ```
 
-## Links – a(Anchor) 및 경로(path), image map
+## 4. Links – a(Anchor) 및 경로(path), image map
 
 ### a(anchor) - 하이퍼링크(Hyperlink)
 
@@ -90,7 +90,7 @@ a 요소에 href 속성을 사용하여 링크 주소를 설정하고 요소 내
 
 
 
-## 어휘(Phrasing) 요소
+## 5. 어휘(Phrasing) 요소
 
 ### strong 
 
