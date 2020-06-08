@@ -1,4 +1,4 @@
-# HTML
+# HTML (HyperText Markup Language)
 
 ### 1. 전역 구조화 엘리먼트
 
